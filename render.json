@@ -1,10 +1,13 @@
 {
     "name": "whatsapp-clone-backend",
-    "buildCommand": "cd backend && npm install",
-    "startCommand": "cd backend && node Server.js",
     "env": {
         "NODE_ENV": "production",
         "MONGODB_URI": "@mongodb_uri",
-        "ALLOWED_ORIGINS": "https://whatsapp-clone.vercel.app"
+        "ALLOWED_ORIGINS": "https://whatsapp-clone-frontend.vercel.app"
+    },
+    "build": {
+        "env": {
+            "NODE_ENV": "production"
+        }
     }
 }
